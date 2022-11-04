@@ -1,0 +1,16 @@
+.box {
+  /*border: 1px solid var(--lwc-colorGray5);*/
+  border: 1px solid #dddbda;
+  /*border-radius: var(--lwc-borderRadiusMedium);*/
+  border-radius: .25rem;
+  /*padding: var(--lwc-spacingSmall);*/
+}
+.header {
+  width: 100%;
+  background-color: #f3f2f2;
+  padding: .75rem;
+  /*background-color: var(--lwc-colorGray3);*/
+}
+.body {
+  padding: .75rem;
+}

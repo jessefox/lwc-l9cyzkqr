@@ -1,0 +1,54 @@
+<template>
+	<div class="slds-grid slds-grid_vertical">
+		<div class="slds-col content">
+			<c-box>
+				<lightning-formatted-rich-text value={script}></lightning-formatted-rich-text>
+			</c-box>
+		</div>
+		<div class="slds-col slds-grid">
+			<div class="slds-col slds-grid slds-grid_vertical slds-m-right_xx-small content">
+				<div class="slds-text-align_center">
+					<h3>Settlement Calculator</h3>
+				</div>
+				<div class="slds-col slds-grid">
+					<div class="slds-col slds-size_1-of-2">
+						<lightning-input name="balance" label="Current Balance" type="number"></lightning-input>
+						<lightning-input name="deductible" label="Deductible / Need Toll Amount" type="number"></lightning-input>
+					</div>
+					<div class="slds-col slds-size_1-of-2">
+						<div class="slds-p-around_x-small">
+							<lightning-button label="Approval Request" title="Approval Request" variant="brand"></lightning-button>
+						</div>
+						<div class="slds-p-around_x-small">
+							<lightning-button label="Take Payment" title="Take Payment" variant="brand"></lightning-button>
+						</div>
+						<div class="slds-p-around_x-small">
+							<lightning-button label="Clear Form" title="Clear Form" variant="brand"></lightning-button>
+						</div>
+					</div>
+				</div>
+				<div class="slds-col">
+				</div>
+			</div>
+			<div class="slds-col slds-grid slds-grid_vertical slds-m-left_xx-small content">
+				<div class="slds-text-align_center">
+					<h3>Payment Plan</h3>
+				</div>
+				<div class="slds-col">
+				</div>
+				<div class="slds-col">
+					<div class="slds-col">
+
+					</div>
+				</div>
+				<div class="slds-col">
+				</div>
+			</div>
+		</div>
+		<div class="slds-col content">
+			<c-box label="Agent Notes">
+				<lightning-formatted-rich-text value={notes}></lightning-formatted-rich-text>
+			</c-box>
+		</div>
+	</div>
+</template>

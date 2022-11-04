@@ -1,0 +1,21 @@
+<template>
+  <!--<lightning-modal-body>
+  </lightning-modal-body>-->
+  <div class="content">
+    <lightning-input name="discount" label="Discount %" required></lightning-input>
+    <lightning-input name="amount" label="Payment Amount" required></lightning-input>
+    <lightning-textarea name="notes" label="Agent Notes"></lightning-textarea>
+    <div class="slds-text-align_center slds-m-top_small">
+      <lightning-button label="Request Approval" title="Request Approval" variant="brand"
+        onclick={handleRequestApprovalClick}></lightning-button>
+    </div>
+    <div class="slds-grid slds-grid_vertical-align-end slds-m-top_large">
+      <div class="slds-col slds-m-right_small">
+        <lightning-input name="code" label="Leader Approval Code"></lightning-input>
+      </div>
+      <div class="slds-col slds-m-left_small">
+        <lightning-button label="Save" title="Save" variant="brand" onclick={handleSaveClick}></lightning-button>
+      </div>
+    </div>
+  </div>
+</template>
