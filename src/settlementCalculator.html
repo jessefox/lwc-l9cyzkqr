@@ -1,0 +1,52 @@
+<template>
+  <c-card title="Settlement Calculator">
+    <div class="slds-grid slds-grid_vertical-align-end">
+      <div class="slds-col slds-size_1-of-2 slds-p-right_x-small">
+        <lightning-input name="balance" label="Current Balance" type="number" formatter="currency" value={balance}
+          disabled>
+        </lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-2 slds-p-left_x-small">
+        <lightning-button label="Approval Request" title="Approval Request" stretch="true" variant="brand">
+        </lightning-button>
+      </div>
+    </div>
+    <div class="slds-grid slds-grid_vertical-align-end">
+      <div class="slds-col slds-size_1-of-2 slds-p-right_x-small">
+        <lightning-input name="deductible" label="Deductible / Need Toll Amount" type="number" formatter="currency"
+          value={deductible}></lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-2 slds-p-left_x-small">
+        <lightning-button label="Take Payment" title="Take Payment" stretch="true" variant="brand">
+        </lightning-button>
+      </div>
+    </div>
+    <div class="slds-grid slds-grid_align-end">
+      <div class="slds-col slds-size_1-of-2 slds-p-left_x-small">
+        <lightning-button label="Clear Form" title="Clear Form" variant="brand"></lightning-button>
+      </div>
+    </div>
+    <div class="slds-grid slds-grid_vertical-align-end">
+      <div class="slds-col slds-size_1-of-2 slds-p-right_x-small">
+        <lightning-input name="discount_percent" label="Enter Discount %" type="number" formatter="percent-fixed"
+          value={discountPercent} onchange={handleDiscountPercentChange}>
+        </lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-2 slds-p-left_x-small">
+        <lightning-input name="calculated_discount_amount" label="Calculated Discount $" type="number"
+          formatter="currency" value={calculatedDiscountAmount} variant="label-hidden" disabled></lightning-input>
+      </div>
+    </div>
+    <div class="slds-grid slds-grid_vertical-align-end">
+      <div class="slds-col slds-size_1-of-2 slds-p-right_x-small">
+        <lightning-input name="discount_amount" label="Enter Discount $" type="number" formatter="currency"
+          value={discountAmount} onchange={handleDiscountAmountChange}>
+        </lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-2 slds-p-left_x-small">
+        <lightning-input name="calculated_discount_percent" label="Calculated Discount %" type="number"
+          formatter="percent-fixed" value={calculatedDiscountPercent} variant="label-hidden" disabled></lightning-input>
+      </div>
+    </div>
+  </c-card>
+</template>

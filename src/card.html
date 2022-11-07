@@ -1,0 +1,10 @@
+<template>
+  <div class="container">
+    <template if:true={title}>
+      <div class="title">
+        <h3>{title}</h3>
+      </div>
+    </template>
+    <slot></slot>
+  </div>
+</template>

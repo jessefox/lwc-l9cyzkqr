@@ -1,0 +1,36 @@
+<template>
+  <c-card title="Payment Plan">
+    <div class="slds-grid">
+      <div class="slds-col slds-size_1-of-2 slds-p-right_x-small">
+        <lightning-input name="balance" label="Current Balance" type="number" formatter="currency" value={balance}
+          disabled>
+        </lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-2 slds-p-left_x-small">
+        <lightning-input name="down_payment" label="Down Payment" type="number" formatter="currency"
+          value={downPayment}></lightning-input>
+      </div>
+    </div>
+    <div class="slds-grid">
+      <div class="slds-col slds-size_1-of-2 slds-p-right_x-small">
+        <lightning-input name="first_pay_date" label="First Pay Date" type="date" value={firstPayDate}>
+        </lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-2 slds-p-left_x-small">
+        <lightning-input name="remaining_amount" label="Remaining Amount" type="number" formatter="currency"
+          value={remainingAmount} disabled></lightning-input>
+      </div>
+    </div>
+    <div class="slds-grid slds-grid_vertical-align-center slds-p-vertical_x-small">
+      <div class="slds-col slds-size_1-of-2 slds-text-align_center">
+        <h3>Amount</h3>
+      </div>
+      <!--<div class="slds-col slds-size_1-of-3 slds-text-align_center">
+        <lightning-button label="Clear" title="Clear" variant="brand"></lightning-button>
+      </div>-->
+      <div class="slds-col slds-size_1-of-2 slds-text-align_center">
+        <h3>Number of Payments</h3>
+      </div>
+    </div>
+  </c-card>
+</template>
