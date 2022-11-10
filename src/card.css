@@ -1,8 +1,10 @@
 .container {
   background-color: #ffffff; /*var(--lwc-colorBackgroundAlt);*/
   padding: 1rem; /*var(--lwc-spacingMedium);*/
+  height: 100%;
 }
 .title {
   width: 100%;
   text-align: center;
+  padding-bottom: .75rem;
 }
